@@ -1,0 +1,32 @@
+{
+  "name": "larnia-final-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@types/multer": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "mammoth": "latest",
+    "multer": "latest",
+    "openai": "latest",
+    "pdf-parse": "latest",
+    "uuid": "latest",
+    "ws": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/ws": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "@types/pdf-parse": "latest"
+  }
+}
