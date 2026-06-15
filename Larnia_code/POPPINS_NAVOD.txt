@@ -1,0 +1,32 @@
+# Poppins pre Larnia / LVGL
+
+Tento projekt je pripraveny na Poppins ako skutocny LVGL font.
+
+Postup:
+1. Do hlavneho priecinka projektu skopiruj subor `poppins.zip`.
+   Musi byt vedla `prepare_windows.bat` a `generate_poppins_fonts.bat`.
+
+2. Spusti najprv:
+   `prepare_windows.bat`
+
+3. Potom spusti:
+   `generate_poppins_fonts.bat`
+
+4. Skript vytvori vo vygenerovanom Arduino projekte:
+   - lv_font_poppins_13.c
+   - lv_font_poppins_16.c
+   - lv_font_poppins_20.c
+   - lv_font_poppins_24.c
+   - lv_font_poppins_34.c
+   - lv_font_poppins_36.c
+   - lv_font_poppins_40.c
+
+5. Otvor:
+   generated\Larnia_Figma_Final\Larnia_Figma_Final.ino
+
+6. Daj Verify a Upload.
+
+Poznamky:
+- Pouziva sa rozsah Unicode 0x20-0x7E a 0xA0-0x17F.
+- To pokryva slovensku diakritiku: á ä č ď é í ľ ĺ ň ó ô ŕ š ť ú ý ž aj velke pismena.
+- Fontove subory TTF sa neposielaju vo vyslednom baliku. Skript ich berie z tvojho lokalneho `poppins.zip`.
